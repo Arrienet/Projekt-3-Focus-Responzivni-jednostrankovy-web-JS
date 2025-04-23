@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Tereza Divišová-->
+  <!--divis.tereza@gmail.com-->
+  <!--Otravnyhmyz-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus - Úvod</title>
+  <link rel="icon" href="/icon/favicon32x32.png" type="favicon">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/4ba178df41.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Focus</a>
+      <nav class="main-nav">
+        <a href="">Úvod</a>
+        <a href="">O projektu</a>
+        <a href="">Formulář</a>
+        <div class="theme-switch">
+          <button id="theme-toggle" aria-label="Přepnout téma">🌓</button>
+          <p class="theme-label">Dark</p>
+        </div>
+      </nav>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="main-content">
+
+      <div class="hero">
+        <h1>Vítej na Focus</h1>
+        <p>Minimalistický prostor pro tvé projekty, poznámky a soustředění.</p>
+      </div>
+
+      <div class="tasks">
+        <h2>Aktuální projekt</h2>
+        <ul>
+          <li>✅ Dokončit návrh</li>
+          <li>🕒 Připravit prezentaci</li>
+          <li>✏️ Upravit poznámky</li>
+        </ul>
+      </div>
+      
+      <div class="about">
+        <h2>O projektu</h2>
+        <p>Focus je nástroj, který ti pomůže organizovat tvoje úkoly a projekty s důrazem na jednoduchost a přehlednost. Vytvoř si účet a začni přidávat své projekty. Každý projekt můžeš jednoduše popsat, přidat termín dokončení, připojit související soubory a poznámky, a to vše bez rušivých elementů.</p>
+      </div>
+
+      <div class="images">
+        <img src="images/obrazek1.webp" alt="Obrázek 1">
+        <img src="images/obrazek2.webp" alt="Obrázek 2">
+        <img src="images/obrazek3.webp" alt="Obrázek 3">
+      </div>
+
+      <div class="guide">
+        <h2>Jak používat Focus:</h2>
+        <ul>
+          <li><strong>Vytvoř si účet:</strong> Zaregistruj se a přihlas se do svého osobního dashboardu.</li>
+          <li><strong>Přidej nový projekt:</strong> Každý projekt můžeš snadno pojmenovat a přidat k němu detaily.</li>
+          <li><strong>Organizuj projekty:</strong> U každého projektu nastav termíny, přidej soubory, poznámky nebo prezentace.</li>
+          <li><strong>Dokonči projekt:</strong> Jakmile projekt dokončíš, označ ho jako dokončený a uvidíš ho na konci seznamu.</li>
+          <li><strong>Začni dnes:</strong> Měj svůj pracovní prostor vždy pod kontrolou.</li>
+        </ul>
+      </div>
+
+      <div class="focus-text">
+        <p>FOCUS
+          on your
+          Goals
+        </p>
+      </div>
+
+      <div class="quote">
+        <blockquote>
+          "Jednoduchost je nejvyšší sofistikovanost." – Leonardo da Vinci
+        </blockquote>
+      </div>
+
+      <div class="text-content"> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto aut veritatis numquam quidem ad repellendus maxime labore, ut libero maiores perferendis quas recusandae, dignissimos voluptatibus iure. Cum, ipsam est!</p>
+      </div> 
+
+    </section>
+
+    <section class="form">
+      <article>
+      <h2>Zaregistruj se!</h2>
+            
+      <!-- Notifikace chyb pro validaci -->
+      <!--<p class="notificationName">Vyplňte prosím jméno a příjmení</p>
+      <p class="notificationEmail">Vyplňte prosím platný email!</p>
+      <p class="notificationPassword">Vyplňte prosím heslo!</p>
+      <p class="notificationConfirmPassword">Hesla se neshodují!</p>-->
+      
+      <!-- Formulář -->
+      <form id="form" novalidate>
+        <div class="input-box">
+          <input type="text" class="fullName" placeholder="Jméno *" required>
+          <input type="email" class="email" placeholder="Email *" required>
+          <input type="password" class="password" placeholder="Heslo *" required>
+          <input type="password" class="confirmPassword" placeholder="Potvrďte heslo *" required>
+          <input type="submit" value="Potvrdit registraci">
+          <span class="text">Děkujeme za registraci!</span>
+        </div>
+      </form>
+      <p class="notificationSuccess" style="display:none; color: rgba(64, 150, 64, 0.884);">Děkujeme za registraci!</p>
+    </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h6>
+        <p><a href="#contact" class="contact-btn">Contact</a></p>
+        <p>© 2025 - Focus. All Rights Reserved.</p>
+      </h6>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
