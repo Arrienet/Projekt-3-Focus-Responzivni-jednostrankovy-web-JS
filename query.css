@@ -1,0 +1,68 @@
+
+/* Responsivita - Queries */
+@media (max-width: 768px) {
+    /* header */
+    .main-header .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .main-nav {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--header-bg);
+        padding: 0 2rem; /* vertikální padding zavřený */
+        gap: 1.2rem;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    
+    .main-nav.show {
+        max-height: 500px; /* dost velké, aby se menu vešlo */
+        opacity: 1;
+        padding: 1rem 2rem; /* padding vrátíme zpátky, aby bylo hezky */
+        display: flex; /* aby bylo pořád flex */
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: var(--text-color);
+    }
+  
+    .main-nav a,
+    .theme-switch {
+      width: 100%;
+    }
+  
+    /* main */
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .focus-text p {
+      font-size: 36px;
+      white-space: pre-line;
+      text-align: center;
+    }
+  
+    /* Obrázky */
+    .images {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding-bottom: 40px;
+      padding-top: 30px;
+    }
+  
+    /* Tlačítko pro posun na začátek stránky */
+    #scrollToTopBtn {
+      bottom: 15px;
+      right: 15px;
+    }
+  }
